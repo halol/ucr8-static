@@ -8,8 +8,8 @@ $brand-yellow: #F2CF0E;
 $brand-light: #F1F7F8;
 
 $brand-gray: #2D2F30;
-
-
+$font-size-base:          18px !default;
+$line-height-base:        1.67 !default; // 20/14
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
@@ -34,6 +34,7 @@ body {
   color: #2C2F2F;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-top: 50px;
 }
 
 h1, h2, h3, h4 {
@@ -102,7 +103,7 @@ h3 {
 
 
 header.header {
-  min-height: 98vh;
+  min-height: 90vh;
   span {
     color: $brand-primary;
   }
@@ -129,7 +130,8 @@ p.lead {
 
 .grid-item {
   padding: 5em;
-  // outline: 1px solid red;
+  outline: 1px solid red;
+  position: relative;
   &.grid-w-50 {
     width: 50%;
   }
@@ -155,6 +157,9 @@ p.lead {
   &.has-image {
     padding: 0;
     overflow: hidden;
+  }
+  @media (max-width: $screen-xs) {
+    width: 100%;
   }
 }
 .client-logos {
@@ -240,6 +245,9 @@ img {
 }
 .theme-dark-darker{
   @include theme($brand-gray, darken($brand-gray, 10%), white);
+}
+.theme-less-dark{
+  @include theme(lighten($brand-gray, 10%), lighten($brand-gray, 20%), white);
 }
 
 
