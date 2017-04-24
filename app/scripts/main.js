@@ -1,3 +1,4 @@
+/* global $ */
 'use strict';
 
 $('body').scrollspy({ target: '#navbar-spy', offset: 50 });
@@ -38,18 +39,4 @@ $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
   var src = iframe.attr('src');
   iframe.attr('src', '');
   iframe.attr('src', src);
-});
-
-
-$(document).ready(function(){
-  new Siema({
-    selector: '.siema',
-    duration: 200,
-    easing: 'ease-out',
-    perPage: 1,
-    startIndex: 0,
-    draggable: true,
-    threshold: 20,
-    loop: true
-  });
 });
