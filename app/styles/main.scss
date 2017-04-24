@@ -32,6 +32,8 @@ body {
   font-family: "museo-sans",sans-serif;
   position: relative;
   color: #2C2F2F;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4 {
@@ -133,6 +135,12 @@ p.lead {
   }
   &.grid-w-100 {
     width: 100%;
+  }
+  &.grid-w-6th {
+    width: calc(100%/6);
+  }
+  &.grid-w-3th {
+    width: calc(100%/3);
   }
   width: 25%;
   &.hover-me {
@@ -239,4 +247,5 @@ img {
   a {
     color: white;
   }
+
 }
