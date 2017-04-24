@@ -1,15 +1,7 @@
 $icon-font-path: '../fonts/';
+@import "variables";
 
-$brand-primary: #0E3FF2;
-$brand-secondary: #0EDBF2;
-$brand-purple: #780EF2;
-$brand-pink: #F20E91;
-$brand-yellow: #F2CF0E;
-$brand-light: #F1F7F8;
 
-$brand-gray: #2D2F30;
-$font-size-base:          18px !default;
-$line-height-base:        1.67 !default; // 20/14
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
@@ -26,7 +18,15 @@ $line-height-base:        1.67 !default; // 20/14
     color: $color;
 }
 
-
+.testimonial {
+  font-family: 'Adobe Garamond Pro', Georgia, sans-serif;
+  &:before {
+    content: open-quote;
+  }
+  &:after {
+      content: close-quote;
+  }
+}
 
 body {
   font-family: "museo-sans",sans-serif;
@@ -34,7 +34,7 @@ body {
   color: #2C2F2F;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding-top: 50px;
+  //padding-top: 50px;
 }
 
 h1, h2, h3, h4 {
@@ -70,46 +70,59 @@ a {
 }
 
 // SIEMA!
-.tab-content {
-  width: 60vw;
-  margin: 0 auto;
-  //border-radius: 10px;
-  //overflow: hidden;
-  box-shadow: 0 8px 32px rgba(black, 0.5);
-}
-.tab-pane {
-  //overflow: hidden;
-}
-ul[role="tablist"] {
-  margin: 0 auto;
-  display: inline-block;
-  margin-top: 48px;
-}
+// .tab-content {
+//   width: 60vw;
+//   margin: 0 auto;
+//   //border-radius: 10px;
+//   //overflow: hidden;
+//   box-shadow: 0 8px 32px rgba(black, 0.5);
+// }
+// .tab-pane {
+//   //overflow: hidden;
+// }
+// ul[role="tablist"] {
+//   margin: 0 auto;
+//   display: inline-block;
+//   margin-top: 48px;
+// }
 
 
 
 h1 {
   font-size: 80px;
-
   letter-spacing: -3px;
 }
 h2 {
   font-size: 64px;
-
 }
-h3 {
 
+@media (max-width: $screen-sm) {
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  p.lead {
+    font-size: 18px!important;
+    font-weight: 400!important;
+  }
 }
 
 
 header.header {
-  min-height: 90vh;
+  height: 100vh;
   span {
     color: $brand-primary;
   }
   background-color: #F1F7F8;
   // background-image: url(../images/ucr_pattern3.svg);
   // background-size: 5%;
+  @media (max-width: $screen-sm) {
+    p {
+      margin: 0 2em;
+    }
+  }
 }
 .slide {
   padding: 4em;
@@ -120,7 +133,7 @@ header.header {
 p.lead {
   font-size: 24px;
   letter-spacing: -0.4px;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 .measure {
@@ -157,10 +170,60 @@ p.lead {
   &.has-image {
     padding: 0;
     overflow: hidden;
+    @include theme(lighten($brand-gray, 10%), lighten($brand-gray, 20%), white);
+    img {
+      
+
+
+    }
   }
-  @media (max-width: $screen-xs) {
+  @media (max-width: $screen-sm) {
+    padding: 3em;
     width: 100%;
+    &.grid-w-50 {
+      width: 100%;
+    }
+    &.grid-w-100 {
+      width: 100%;
+    }
+    &.grid-w-6th {
+      width: 100%;
+    }
+    &.grid-w-3th {
+      width: 100%;
+    }
+    &.has-video {
+      padding: 1em;;
+    }
+    &.has-image {
+
+      // padding: 1em;
+    }
   }
+  @media (min-width: $screen-sm + 1) and (max-width: $screen-md-max) {
+    padding: 3em;
+    width: 50%;
+    &.grid-w-50 {
+      width: 50%;
+    }
+    &.grid-w-100 {
+      width: 100%;
+    }
+    &.grid-w-6th {
+      width: 50%;
+    }
+    &.grid-w-3th {
+      width: 100%;
+    }
+  }
+}
+.call-to-action {
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 48px rgba($brand-primary, 0.5);
 }
 .client-logos {
   // padding: 5em;
@@ -254,6 +317,8 @@ img {
 .footer {
   a {
     color: white;
+    // font-size: 14px;
+    // line-height: 1.2;
   }
 
 }
