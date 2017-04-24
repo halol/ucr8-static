@@ -5,7 +5,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>ucr8 static</title>
+    <title>ucreate.it - Energise your startup!</title>
 
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -111,6 +111,10 @@
           <figure class="figure">
             <img src="images/photos/workshop_1.jpg" alt="Workshop" class="">
             <figcaption class="text-center flex items-center justify-center flex-column">Workshop</figcaption>
+          </figure>
+          <figure class="figure">
+            <img src="images/photos/workshop_1.jpg" alt="Workshop" class="">
+            <figcaption class="text-center flex items-center justify-center flex-column">Workshop 2</figcaption>
           </figure>
         </div>
 
@@ -306,11 +310,28 @@
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+
     <!-- endbuild -->
+
 
 
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
+    <!-- build:js scripts/siema.min.js -->
+    <script src="/bower_components/siema/dist/siema.min.js"></script>
+    <!-- endbuild -->
+    <script>
+      new Siema({
+        selector: '.siema',
+        duration: 200,
+        easing: 'ease-out',
+        perPage: 1,
+        startIndex: 0,
+        draggable: true,
+        threshold: 20,
+        loop: false
+      });
+    </script>
   </body>
 </html>
