@@ -47,7 +47,7 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav id="navbar-spy" class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
@@ -56,55 +56,58 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img src="images/logo_outline.svg" alt=""></a>
+          <a class="navbar-brand" href="#top"><img src="images/logo_outline.svg" alt=""></a>
         </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navbar-spy">
+        <div class="collapse navbar-collapse" id="navbar">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#what">what we do</a></li>
             <li><a href="#how">how we do it</a></li>
             <li><a href="#say">what they say</a></li>
           </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
+        </div>
+      </div>
     </nav>
 
-    <header class="header text-center flex items-center justify-center flex-column">
-      <h1><span>Energise</span> your startup.</h1>
-      <p class="lead">Custom built apps, websites and software using our flexible, iterative approach.</p>
+    <header id="top" class="header text-center flex items-center justify-center flex-column">
+      <div class="inner-header">
+        <h1><span>Energise</span> your startup.</h1>
+        <p class="lead">Custom built apps, websites and software using our flexible, iterative approach.</p>
+      </div>
     </header>
 
     <section class="flex-wrap flex justify-center flex-row" id="what">
       <div class="grid-item theme-blue-purple grid-w-50">
-        <h2>what we do</h2>
-        <p class="lead measure">Put simply we create startups that might otherwise not exist. We just can't get enough of empowering our founders to solve real problems with clever solutions. We live and breath agile development and specialise in getting your startup to market in under 90 days (we work with enterprise too!).</p>
+        <div class="inner">
+          <h2>what we do</h2>
+          <p class="lead measure">Put simply we create startups that might otherwise not exist. We just can't get enough of empowering our founders to solve real problems with clever solutions. We live and breath agile development and specialise in getting your startup to market in under 90 days (we work with enterprise too!).</p>
+        </div>
       </div>
-      <div class="grid-item theme-purple-pink items-center justify-center flex text-center">
-
+      <div class="grid-item theme-purple-pink items-center justify-center flex text-center what-we-do-item">
         <h3>Web &amp; App<br>Development</h3>
       </div>
-      <div class="grid-item theme-pink-yellow items-center justify-center flex text-center">
+      <div class="grid-item theme-pink-yellow items-center justify-center flex text-center what-we-do-item">
         <h3>Product<br>Consultancy</h3>
       </div>
-      <div class="grid-item items-center justify-center flex text-center">
+      <div class="grid-item items-center justify-center flex text-center what-we-do-item">
         <h3>Legal<br>&amp; Finance</h3>
       </div>
-      <div class="grid-item items-center justify-center flex text-center">
+      <div class="grid-item items-center justify-center flex text-center what-we-do-item">
         <h3>UX/UI<br>Design</h3>
       </div>
-      <div class="grid-item items-center justify-center flex text-center">
+      <div class="grid-item items-center justify-center flex text-center what-we-do-item">
         <h3>Brand<br>Identitity</h3>
       </div>
-      <div class="grid-item items-center justify-center flex text-center">
+      <div class="grid-item items-center justify-center flex text-center what-we-do-item">
         <h3>Marketing<br>&amp; Social Media</h3>
       </div>
 
     </section>
     <section class="flex-wrap flex justify-center flex-row" id="how">
       <div class="grid-item grid-w-50 theme-purple-pink">
-        <h2>how we do it</h2>
-        <p class="lead measure">Our unique operating model means we become equity partners in the startups we work with. We are as invested in the journey as you are. Everyone is aligned to the same goal so when your start up reaches the top it means everyone benefits with it's success! But's what our secret we hear you ask?</p>
+        <div class="inner">
+          <h2>how we do it</h2>
+          <p class="lead measure">Our unique operating model means we become equity partners in the startups we work with. We are as invested in the journey as you are. Everyone is aligned to the same goal so when your start up reaches the top it means everyone benefits with it's success! But's what our secret we hear you ask?</p>
+        </div>
       </div>
       <div class="grid-item grid-w-50 has-image">
         <div class="siema">
@@ -117,102 +120,102 @@
             <figcaption class="text-center flex items-center justify-center flex-column">Workshop 2</figcaption>
           </figure>
         </div>
-
       </div>
-      <div class="grid-item grid-w-50">
+      <div class="grid-item grid-w-50 first-item-with-icon align-flex-left">
+        <img src="images/icons/exploration.svg" alt="" style="margin-left: 0; text-align: left;">
         <h3>Exploration</h3>
         <p>All clients go through 3 workshops. Firstly, we inform you on all things lean and agile, it’s our bread and butter. Secondly, you educate us on your business model and we utilise our expertise to refine it. Finally, we form a consensus around high level product capabilities and user experiences.</p>
       </div>
-      <div class="grid-item grid-w-50">
+      <div class="grid-item grid-w-50 align-flex-left">
+        <img src="images/icons/creation.svg" alt="">
         <h3>Creation</h3>
         <p>We start by crafting you a brand and creating you a presence online. We then dive deep into user journeys and construct wireframes. Acting on feedback we create designs and prototypes ready to test our assumptions. We go through that loop as required until we are happy to create a product and take it into beta.</p>
       </div>
-      <div class="grid-item grid-w-50">
+      <div class="grid-item grid-w-50 align-flex-left">
+        <img src="images/icons/validation.svg" alt="">
         <h3>Validation</h3>
         <p>There is nothing worse than building a product nobody wants and that’s why we validate. Once in beta we work closely with users to gain critical feedback and utilise analytics for even deeper insights. We refine as required and when we reach a moment of real delight we prepare for launch.</p>
       </div>
-      <div class="grid-item grid-w-50">
+      <div class="grid-item grid-w-50 align-flex-left">
+        <img src="images/icons/domination.svg" alt="">
         <h3>Domination</h3>
         <p>Once launched that's when the real work starts as we want you to dominate your market. We increase our efforts to gather feedback, find insights and improve your product to allow you to master your environment. We look beyond the horizon and guide you on the direction to take and the resources you will need.</p>
       </div>
 
     </section>
-    <section class="flex-wrap flex justify-center flex-row" id="say">
-      <div class="grid-item grid-w-100 theme-pink-yellow text-center">
+    <section class="flex-wrap flex flex-row" id="say">
+      <div class="grid-item grid-w-100 theme-pink-yellow">
         <h2>what they say</h2>
-        <p class="lead">We love to get up close and personal with our founders and luckily for you they also like sharing their experiences. You can find out more about how we help them across the board with product guidance, business strategy, marketing campaigns, legal advice, future finance and everything inbetween below.</p>
+        <p class="lead measure">We love to get up close and personal with our founders and luckily for you they also like sharing their experiences. You can find out more about how we help them across the board with product guidance, business strategy, marketing campaigns, legal advice, future finance and everything inbetween below.</p>
       </div>
-      <div class="grid-item grid-w-50 theme-dark-darker">
-        <img src="images/clients/logo_2.svg" alt="">
-        <h3>Heero</h3>
-        <p class="lead testimonial">With an initial timeline of 3 months for the MVP the Heero app went into review with the App stores a little over 2 months into the project meaning I’ve had time to make tweaks based on Apple / Google feedback without running over budget. The quality of build is fantastic and having a team dedicated to my project makes it a lot easier to get things done.</p>
+      <div class="grid-item grid-w-100 theme-dark-darker">
+        <img src="images/clients/logo_heero.svg" alt="Heero" class="project-logo">
+        <h3 class="project-title">Heero</h3>
+        <p class="lead testimonial measure">With an initial timeline of 3 months for the MVP the Heero app went into review with the App stores a little over 2 months into the project meaning I’ve had time to make tweaks based on Apple / Google feedback without running over budget. The quality of build is fantastic and having a team dedicated to my project makes it a lot easier to get things done.</p>
         <div class="founder">
-          <img src="images/photos/founder_1.jpg" alt="Founder Name" class="img-circle img-shadow">
-          <h4>Simon Bath, CEO</h4>
+          <img src="images/photos/philipwride-150x150.jpg" alt="Founder Name" class="img-circle img-shadow">
+          <h4>Philip Wride, Founder</h4>
         </div>
 
-        <a href="#" class="btn btn-primary">Visit website</a>
+        <a href="http://www.heeroapp.com/" class="btn btn-primary" target="_blank">Visit website</a>
       </div>
-      <div class="grid-item grid-w-50 theme-dark-darker has-image">
+      <!-- <div class="grid-item grid-w-50 theme-dark-darker has-image">
         <figure class="figure">
           <img src="images/photos/founders_meetup.jpg" alt="Workshop" class="">
           <figcaption class="text-center flex items-center justify-center flex-column">Workshop</figcaption>
         </figure>
-      </div>
-      <div class="grid-item grid-w-50 theme-dark-darker has-video">
+      </div> -->
+      <div class="grid-item grid-w-100 theme-dark-darker">
+
+        <img src="images/clients/logo_clientshare.svg" alt="ClientShare" class="project-logo">
+        <h3 class="project-title">ClientShare</h3>
+        <p class="lead testimonial measure">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quo porro error, neque fugit provident iusto, ad nulla maxime nam beatae! Adipisci, tempore natus repudiandae, quia est consequuntur ab voluptates.</p>
         <div class="embed-responsive embed-responsive-16by9">
           <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/213778037" width="640" height="396" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/213778037">Why I drink</a> from <a href="https://vimeo.com/user46240778">(1331)</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
         </div>
-      </div>
-      <div class="grid-item grid-w-50 theme-dark-darker">
-
-        <img src="images/clients/logo_2.svg" alt="">
-        <h3>WhenYouMove</h3>
-        <p class="lead testimonial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quo porro error, neque fugit provident iusto, ad nulla maxime nam beatae! Adipisci, tempore natus repudiandae, quia est consequuntur ab voluptates.</p>
         <div class="founder">
+          <br>
           <img src="images/photos/founder_1.jpg" alt="Founder Name" class="img-circle img-shadow">
-          <h4>James, CEO</h4>
+          <h4>James Ward, CEO</h4>
         </div>
-        <a href="#" class="btn btn-primary">Visit website</a>
+        <a href="http://myclientshare.com/" class="btn btn-primary" target="_blank">Visit website</a>
       </div>
 
 
-      <div class="grid-item grid-w-50 theme-dark-darker">
-        <img src="images/clients/logo_2.svg" alt="">
-        <h3>WhenYouMove</h3>
 
-          <p class="lead testimonial">ucreate.it have been the best possible technology partner for When You Move. By working closely with them we have been able to launch our business in just 3 months; a marvellous achievement.</p>
+      <div class="grid-item grid-w-100 theme-dark-darker">
+        <img src="images/clients/logo_wym.svg" alt="WhenYouMove" class="project-logo">
+        <h3 class="project-title">WhenYouMove</h3>
+          <p class="lead testimonial measure">ucreate.it have been the best possible technology partner for When You Move. By working closely with them we have been able to launch our business in just 3 months; a marvellous achievement.</p>
         <div class="founder">
-          <img src="images/photos/founder_1.jpg" alt="Founder Name" class="img-circle img-shadow">
+          <img src="images/photos/simonbath-150x150.jpg" alt="Founder Name" class="img-circle img-shadow">
           <h4>Simon Bath, CEO</h4>
         </div>
 
-        <a href="#" class="btn btn-primary">Visit website</a>
+        <a href="https://www.whenyoumove.com/" class="btn btn-primary" target="_blank">Visit website</a>
       </div>
-      <div class="grid-item grid-w-50 theme-dark-darker has-image">
+      <!-- <div class="grid-item grid-w-50 theme-dark-darker has-image">
         <figure class="figure">
           <img src="images/photos/founders_meetup.jpg" alt="Workshop" class="">
           <figcaption class="text-center flex items-center justify-center flex-column">Workshop</figcaption>
         </figure>
-      </div>
+      </div> -->
     </section>
     <!-- Client logos -->
     <section class="flex-wrap flex justify-around items-center flex-row theme-light-dark client-logos">
       <div class="grid-item grid-w-100">
         <p class="lead">More than £25m raised in the last year.</p>
-        <img src="images/clients/logo_1.svg" alt="" >
-        <img src="images/clients/logo_2.svg" alt="" >
-        <img src="images/clients/logo_3.svg" alt="" >
-        <img src="images/clients/logo_4.svg" alt="" >
-        <img src="images/clients/logo_5.svg" alt="" >
-        <img src="images/clients/logo_6.svg" alt="" >
-
+        <img src="images/clients/logo_myway.svg" alt="" >
+        <img src="images/clients/logo_mm.svg" alt="" >
+        <img src="images/clients/logo_wagonex.svg" alt="" >
+        <img src="images/clients/logo_eezy.svg" alt="" >
+        <img src="images/clients/logo_myvitae.svg" alt="" >
       </div>
 
     </section>
     <a href="#" class="btn btn-primary call-to-action">Create something amazing</a>
     <footer class="footer flex-wrap flex justify-center flex-row theme-less-dark" id="footer">
-      <div class="grid-item">
+      <div class="grid-item collapse-on-mobile">
         <!-- <img src="images/logo_white.svg" height="24" alt="ucreate.it"> -->
         <address>
           <ul class="list-unstyled">
@@ -227,7 +230,7 @@
           </ul>
         </address>
       </div>
-      <div class="grid-item">
+      <div class="grid-item collapse-on-mobile">
         <!-- <img src="images/logo_white.svg" height="24" alt="ucreate.it"> -->
         <address>
           <ul class="list-unstyled">
@@ -242,7 +245,7 @@
           </ul>
         </address>
       </div>
-      <div class="grid-item">
+      <div class="grid-item collapse-on-mobile">
         <!-- <img src="images/logo_white.svg" height="24" alt="ucreate.it"> -->
         <address>
           <ul class="list-unstyled">
@@ -257,7 +260,7 @@
           </ul>
         </address>
       </div>
-      <div class="grid-item">
+      <div class="grid-item collapse-on-mobile">
         <h4>Follow us</h4><br>
         <ul class="list-unstyled">
         <li><a href="tel:1234566789">Facebook</a></li>

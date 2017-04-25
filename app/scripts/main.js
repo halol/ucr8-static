@@ -1,6 +1,17 @@
 /* global $ */
 'use strict';
 
+
+$('.header').css({
+  height: $(window).height()
+});
+
+var whatItemheight = $('#what').find('.grid-item').outerHeight();
+// $('#what').find('.grid-item').each(function() {
+//   $(this).css({
+//     height: whatItemheight
+//   })
+// });
 $('body').scrollspy({ target: '#navbar-spy', offset: 50 });
 $('#navbar-spy a').on('click', function(event) {
 
