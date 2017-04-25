@@ -6,7 +6,7 @@ $('.header').css({
   height: $(window).height()
 });
 
-var whatItemheight = $('#what').find('.grid-item').outerHeight();
+//var whatItemheight = $('#what').find('.grid-item').outerHeight();
 // $('#what').find('.grid-item').each(function() {
 //   $(this).css({
 //     height: whatItemheight
