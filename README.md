@@ -12,24 +12,24 @@ Static Landing Page
 - ~Responsive~
 - ~Replace hamburger menu~
 ### Header
-- Add parallax background (icons)
+- ~100vh~
+- ~50vh class~
 ### What We Do
 - ~Slider with images from office (Square format from Instagram)~
-- ~Add icons~
 ### How We Do It
-- ~Add icons
+- ~Add icons~
 ### What They Say
 - ~Content for Project 1~
 - ~Content for Project 2~
 - ~Testimonials Tabs:~
 	- Pause playback when switching tabs (TODO when have more than 1)
-	- Responsive
+	- ~Responsive~
 ### Contact Form
 - ~Floating button “Contact Us”~
 ### Footer
 - ~Addresses for: London, Chandigarh, Kraków~
 - ~Social Links~
-- Sign up for newsletter (MailChimp)
+- ~Sign up for newsletter (MailChimp)~
 ### SEO
 - ~Description~
 - ~Robots~
@@ -40,8 +40,7 @@ Static Landing Page
 - ~Analytics~
 - Event Tracking
 ### General
-- Responsive
-- Assign Paper style
-- Rebuild forms
+- ~Responsive~
+- ~Rebuild forms~
 ### A/B
 - ~Optimizely~

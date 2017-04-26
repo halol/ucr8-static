@@ -134,6 +134,9 @@ header.header {
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  &.half-the-fold {
+    height: 50vh;
+  }
   @media (min-width: $screen-xs-max) and (max-width: $screen-md-max) {
     background-image: url(../images/covers/header_md.jpg);
   }
