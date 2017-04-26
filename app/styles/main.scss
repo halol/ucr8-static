@@ -14,20 +14,14 @@ $icon-font-path: '../fonts/';
   //outline: 1px solid rgba(red, 0.3);
 }
 
-@keyframes blue-purple-animation {
-    0%{background-position:0% 17%}
-    50%{background-position:100% 84%}
-    100%{background-position:0% 17%}
-}
+
 // Mixins
 @mixin theme($start, $end, $color) {
-    // background-image: -webkit-linear-gradient(top left, $start 0%, $end 100%);
-    // background-image: -o-linear-gradient(top left, $start 0%, $end 100%);
-    // background-image: linear-gradient(to bottom right, $start 0%, $end 100%);
-    background: linear-gradient(124deg, $start, $end);
+    background-image: -webkit-linear-gradient(top left, $start 0%, $end 100%);
+    background-image: -o-linear-gradient(top left, $start 0%, $end 100%);
+    background-image: linear-gradient(to bottom right, $start 0%, $end 100%);
+    //background: linear-gradient(124deg, $start, $end);
     color: $color;
-    animation: blue-purple-animation 32s ease infinite;
-    background-size: 200% 200%;
 }
 
 .testimonial {
