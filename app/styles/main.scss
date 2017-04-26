@@ -129,7 +129,7 @@ h2 {
 
 
 header.header {
-  height: 100vh;
+  height: 98vh;
   background-image: url(../images/covers/header_l.jpg);
   background-size: cover;
   background-position: 50% 50%;
@@ -507,5 +507,7 @@ img {
     // font-size: 14px;
     // line-height: 1.2;
   }
-
+  h4 {
+    margin-bottom: 24px;
+  }
 }

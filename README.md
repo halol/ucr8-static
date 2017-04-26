@@ -9,37 +9,39 @@ Static Landing Page
 
 ## TODO:
 ### Navigation
-- Responsive
-- Replace hamburger menu
+- ~Responsive~
+- ~Replace hamburger menu~
 ### Header
 - Add parallax background (icons)
 ### What We Do
-- Slider with images from office (Square format from Instagram)
-- Add icons
+- ~Slider with images from office (Square format from Instagram)~
+- ~Add icons~
 ### How We Do It
-- Add icons
+- ~Add icons
 ### What They Say
-- Content for Project 1
-- Content for Project 2
-- Testimonials Tabs:
-	- Pause playback when switching tabs
+- ~Content for Project 1~
+- ~Content for Project 2~
+- ~Testimonials Tabs:~
+	- Pause playback when switching tabs (TODO when have more than 1)
 	- Responsive
 ### Contact Form
-- Floating button “Contact Us”
+- ~Floating button “Contact Us”~
 ### Footer
-- Addresses for: London, Chandigarh, Kraków
-- Social Links
+- ~Addresses for: London, Chandigarh, Kraków~
+- ~Social Links~
 - Sign up for newsletter (MailChimp)
 ### SEO
-- Description
-- Robots
-- Keywords
+- ~Description~
+- ~Robots~
+- ~Keywords~
 - Alt tags everywhere
 ### Analytics
-- FullStory
-- Analytics
+- ~FullStory~
+- ~Analytics~
 - Event Tracking
 ### General
 - Responsive
 - Assign Paper style
 - Rebuild forms
+### A/B
+- ~Optimizely~
