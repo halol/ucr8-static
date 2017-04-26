@@ -13,12 +13,21 @@ $icon-font-path: '../fonts/';
 * {
   //outline: 1px solid rgba(red, 0.3);
 }
+
+@keyframes blue-purple-animation {
+    0%{background-position:0% 17%}
+    50%{background-position:100% 84%}
+    100%{background-position:0% 17%}
+}
 // Mixins
 @mixin theme($start, $end, $color) {
-    background-image: -webkit-linear-gradient(top left, $start 0%, $end 100%);
-    background-image: -o-linear-gradient(top left, $start 0%, $end 100%);
-    background-image: linear-gradient(to bottom right, $start 0%, $end 100%);
+    // background-image: -webkit-linear-gradient(top left, $start 0%, $end 100%);
+    // background-image: -o-linear-gradient(top left, $start 0%, $end 100%);
+    // background-image: linear-gradient(to bottom right, $start 0%, $end 100%);
+    background: linear-gradient(124deg, $start, $end);
     color: $color;
+    animation: blue-purple-animation 32s ease infinite;
+    background-size: 200% 200%;
 }
 
 .testimonial {
@@ -54,7 +63,7 @@ body {
       background-size: 100%;
       width: 100vh;
       height: 100vh;
-      z-index: 500;
+      z-index: -5;
       opacity: 0.4;
       @media (max-width: $screen-xs) {
         background-size: 50%;
@@ -77,6 +86,9 @@ a {
 .navbar {
   background: white;
   border: none;
+}
+.navbar-toggle {
+  border: 0;
 }
 .nav.navbar-nav {
   font-family: "sofia-pro",sans-serif;
@@ -124,6 +136,16 @@ h2 {
 
 header.header {
   height: 100vh;
+  background-image: url(../images/covers/header_l.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  @media (min-width: $screen-xs-max) and (max-width: $screen-md-max) {
+    background-image: url(../images/covers/header_md.jpg);
+  }
+  @media (max-width: $screen-xs-min) {
+    background-image: url(../images/covers/header_sm.jpg);
+  }
   span {
     color: $brand-primary;
   }
@@ -389,16 +411,25 @@ p.lead {
 figure.figure {
   position: relative;
   transition: all 0.5s ease;
+  overflow: hidden;
+  padding-top: 100%;
+  position: relative;
   img {
+    position: absolute;
+    top: 0;
     transition: all 0.5s ease;
     filter: brightness(1);
+    height: 100%;
+    width: auto;
+    object-fit: fill;
   }
   &:hover {
     img {
-      filter: brightness(.6);
+      filter: brightness(.4);
     }
     figcaption {
       opacity: 1;
+
     }
   }
   figcaption {
@@ -412,6 +443,10 @@ figure.figure {
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
+    small {
+      font-size: 14px;
+      font-weight: 600;
+    }
   }
 }
 
@@ -466,6 +501,9 @@ img {
 }
 .theme-less-dark{
   @include theme(lighten($brand-gray, 10%), lighten($brand-gray, 20%), white);
+}
+.theme-wym {
+  @include theme(#9040A0, #5A83B1, white);
 }
 
 
