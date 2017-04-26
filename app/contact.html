@@ -52,21 +52,21 @@
     <section class="contact-padding">
       <form name="contact" action="thank-you" netlify id="my-form">
         <div class="form-group">
-          <label for="">Name</label>
-          <input type="text" class="form-control" id="" placeholder="">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" placeholder="" name="name" id="name">
         </div>
 
         <div class="form-group">
-          <label for="">Email</label>
-          <input type="email" class="form-control" id="" placeholder="">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" placeholder="" name="email" id="email">
         </div>
         <div class="form-group">
-          <label for="">Phone</label>
-          <input type="tel" class="form-control" id="" placeholder="">
+          <label for="phone">Phone</label>
+          <input type="tel" class="form-control" placeholder="" name="phone" id="phone">
         </div>
         <div class="form-group">
-          <label for="">Message</label>
-        <textarea name="name" rows="8" class="form-control"></textarea>
+          <label for="message">Message</label>
+        <textarea name="message" rows="8" class="form-control" id="message"></textarea>
         </div>
         <input type="submit" class="btn btn-primary btn-block" value="Send">
       </form>
@@ -118,7 +118,7 @@
 
       var $form = $(this);
       $.post($form.attr("action"), $form.serialize()).then(function() {
-        alert("Thank you!");
+        window.location = "http://ucr8-static.netlify.com/thankyou.html";
       });
     });
   </script>
