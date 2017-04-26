@@ -335,10 +335,22 @@ p.lead {
 .call-to-action {
   position: fixed;
   z-index: 100;
-  bottom: 0;
+  bottom: -24px;
   left: 50%;
   transform: translateX(-50%);
   box-shadow: 0 0 48px rgba($brand-primary, 0.5);
+  overflow: hidden;
+  height: 72px;
+  &:hover {
+    bottom: 0;
+    > small { display: block; }
+  }
+  > small {
+    display: block;
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 14px;
+  }
 }
 
 
@@ -510,4 +522,12 @@ img {
   h4 {
     margin-bottom: 24px;
   }
+}
+
+
+// MailChimp Overrides
+#mc_embed_signup div.mce_inline_error {
+  background-color: $brand-danger;
+  color: white;
+  font-size: 14px;
 }

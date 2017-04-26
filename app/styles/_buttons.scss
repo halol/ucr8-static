@@ -19,7 +19,7 @@
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid transparent;
   white-space: wrap;
-  
+
   @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
   @include user-select(none);
   border-radius: 0;
@@ -90,6 +90,9 @@ a.btn {
 // Danger and error appear as red
 .btn-danger {
   @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+}
+.btn-black {
+  @include button-variant($btn-danger-color, $brand-gray, $brand-gray);
 }
 
 
