@@ -47,25 +47,24 @@
     <header class="contact-padding">
       <a class="navbar-brand btn-block" href="/"><img src="images/logo_outline.svg" alt="" style="margin-left: -15px;"></a>
       <h2>Create something <span class="em-navy">amazing</span></h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In eum consequatur nesciunt fuga, ducimus architecto. Dolores fugiat voluptatibus consequuntur molestias tenetur culpa quam, repellat labore, voluptatem iste officia minus eaque.</p>
     </header>
     <section class="contact-padding">
       <form name="contact" action="thank-you" netlify id="my-form">
         <div class="form-group">
-          <label for="name">Name</label>
+          <label for="name">Your Full Name</label>
           <input type="text" class="form-control" placeholder="" name="name" id="name">
         </div>
 
         <div class="form-group">
-          <label for="email">Email</label>
+          <label for="email">Contact Email</label>
           <input type="email" class="form-control" placeholder="" name="email" id="email">
         </div>
         <div class="form-group">
-          <label for="phone">Phone</label>
+          <label for="phone">Phone Number</label>
           <input type="tel" class="form-control" placeholder="" name="phone" id="phone">
         </div>
         <div class="form-group">
-          <label for="message">Message</label>
+          <label for="message">Let us know more about your product and what we can do to accelerate it</label>
         <textarea name="message" rows="8" class="form-control" id="message"></textarea>
         </div>
         <input type="submit" class="btn btn-primary btn-block" value="Send">
@@ -113,12 +112,14 @@
     <!-- endbuild -->
 
     <script>
+    var thanksUrl = window.location.protocol + '//' + location.hostname + '/thankyou.html';
+    console.log(thanksUrl);
     $("#my-form").submit(function(e) {
       e.preventDefault();
-
       var $form = $(this);
+      $form.find('input[type='submit']').addClass('disabled');
       $.post($form.attr("action"), $form.serialize()).then(function() {
-        window.location = "http://ucr8-static.netlify.com/thankyou.html";
+        window.location = thanksUrl;
       });
     });
   </script>
