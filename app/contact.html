@@ -49,7 +49,7 @@
       <h2>Create something <span class="em-navy">amazing</span></h2>
     </header>
     <section class="contact-padding">
-      <form name="contact" action="thank-you" netlify id="my-form">
+      <form name="contact" action="thankyou.html" netlify id="my-form">
         <div class="form-group">
           <label for="name">Your Full Name</label>
           <input type="text" class="form-control" placeholder="" name="name" id="name">
@@ -117,7 +117,6 @@
     $("#my-form").submit(function(e) {
       e.preventDefault();
       var $form = $(this);
-      $form.find('input[type='submit']').addClass('disabled');
       $.post($form.attr("action"), $form.serialize()).then(function() {
         window.location = thanksUrl;
       });
