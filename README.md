@@ -18,13 +18,12 @@ Static Landing Page
 - ~Slider with images from office (Square format from Instagram)~
 ### How We Do It
 - ~Add icons~
-- 5 Images + Copy
+- ~5 Images + Copy~
 ### What They Say
 - ~Content for Project 1~
 - ~Content for Project 2~
-- ~Testimonials Tabs:~
-	- Pause playback when switching tabs (TODO when have more than 1)
-	- ~Responsive~
+- ~Testimonial~
+- ~Responsive~
 ### Contact Form
 - ~Floating button “Contact Us”~
 ### Footer
@@ -35,13 +34,18 @@ Static Landing Page
 - ~Description~
 - ~Robots~
 - ~Keywords~
-- Alt tags everywhere
+- ~Alt tags everywhere~
 ### Analytics
 - ~FullStory~
 - ~Analytics~
-- Event Tracking
+- Event Tracking (probably no need)
 ### General
 - ~Responsive~
 - ~Rebuild forms~
 ### A/B
 - ~Optimizely~
+### Blog Posts
+- Migrate to Medium
+- Create .htaccess rewrite rules for all of the blog posts (Wordpress > Medium rewrite)
+- /blog/ redirect to blog.html + link to medium or redirect to Medium straight away (https://www.netlify.com/docs/redirects/)
+- ~404 Page~
