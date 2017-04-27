@@ -417,6 +417,13 @@ p.lead {
   margin-bottom: 24px;
 }
 
+.video-container {
+  max-width: 60%;
+  @media (max-width: $screen-md-max) {
+    max-width: 100%;
+  }
+}
+
 figure.figure {
   position: relative;
   transition: all 0.5s ease;
@@ -432,6 +439,7 @@ figure.figure {
     width: auto;
     object-fit: fill;
   }
+
   &:hover {
     img {
       filter: brightness(.4);
@@ -456,7 +464,13 @@ figure.figure {
       font-size: 14px;
       font-weight: 600;
     }
+    > p {
+      line-height: 1;
+    }
+
+
   }
+
 }
 
 img {

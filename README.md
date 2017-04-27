@@ -18,6 +18,7 @@ Static Landing Page
 - ~Slider with images from office (Square format from Instagram)~
 ### How We Do It
 - ~Add icons~
+- 5 Images + Copy
 ### What They Say
 - ~Content for Project 1~
 - ~Content for Project 2~
