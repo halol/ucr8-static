@@ -25,7 +25,7 @@ $icon-font-path: '../fonts/';
 }
 
 .testimonial {
-  font-family: 'Adobe Garamond Pro', Georgia, sans-serif;
+  //font-family: 'Adobe Garamond Pro', Georgia, sans-serif;
   &:before {
     content: open-quote;
   }
@@ -354,6 +354,18 @@ p.lead {
     font-weight: 400;
     font-size: 14px;
   }
+  @media (max-width: $screen-md) {
+    height: auto;
+    bottom: 0;
+    small {
+      display: none;
+    }
+    &:hover {
+      > small {
+        display: none;
+      }
+    }
+  }
 }
 
 
@@ -467,10 +479,7 @@ figure.figure {
     > p {
       line-height: 1;
     }
-
-
   }
-
 }
 
 img {
@@ -538,6 +547,11 @@ img {
   }
   h4 {
     margin-bottom: 24px;
+  }
+  @media (min-width: 1200px) and (max-width: 1388px) {
+    .grid-item {
+      padding: 2em;
+    }
   }
 }
 
