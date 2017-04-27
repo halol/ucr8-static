@@ -2,14 +2,14 @@
 'use strict';
 
 $(document).ready(function() {
-  $('.js-maps-location').attr('id', function() {
-    var mapsUrl = 'https://goo.gl/maps/fFWu2cjkwj82';
-    if(Modernizr.touch) {
-      var mapsUrl = 'comgooglemaps://?saddr=276+Kingsland+Rd,+London+E8+4DG&zoom=14';
-    }
-    console.log(mapsUrl);
-    return mapsUrl;
-  });
+  // $('.js-maps-location').attr('id', function() {
+  //   var mapsUrl = 'https://goo.gl/maps/fFWu2cjkwj82';
+  //   if(Modernizr.touch) {
+  //     var mapsUrl = 'comgooglemaps://?saddr=276+Kingsland+Rd,+London+E8+4DG&zoom=14';
+  //   }
+  //   console.log(mapsUrl);
+  //   return mapsUrl;
+  // });
   $('body').scrollspy({ target: '#navbar-spy', offset: 50 });
   $('#navbar-spy a').on('click', function(event) {
 
