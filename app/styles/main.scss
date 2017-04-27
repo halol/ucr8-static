@@ -434,6 +434,12 @@ p.lead {
   @media (max-width: $screen-md-max) {
     max-width: 100%;
   }
+  .video-testimonial {
+   background-size:cover;
+    &.video-james {
+      background:transparent url('../images/james-ward.jpg') no-repeat 0 0; 
+    }
+  }
 }
 
 figure.figure {
