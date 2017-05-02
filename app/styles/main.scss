@@ -335,6 +335,10 @@ p.lead {
 .overflow-hidden {
   overflow: hidden;
 }
+.hidden {
+  display: none;
+  overflow: hidden;
+}
 .mockup-container {
   //margin-bottom: -9em;
   overflow: hidden;
