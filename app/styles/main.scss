@@ -11,16 +11,13 @@ $icon-font-path: '../fonts/';
 
 
 * {
-  //outline: 1px solid rgba(red, 0.3);
+  outline: 1px solid rgba(red, 0.3);
 }
 
 
 // Mixins
 @mixin theme($start, $end, $color) {
-    background-image: -webkit-linear-gradient(top left, $start 0%, $end 100%);
-    background-image: -o-linear-gradient(top left, $start 0%, $end 100%);
-    background-image: linear-gradient(to bottom right, $start 0%, $end 100%);
-    //background: linear-gradient(124deg, $start, $end);
+    background-image: chromatic-gradient(to bottom right, $start 0%, $end 100%);
     color: $color;
     background-repeat: no-repeat;
     background-size: cover;
@@ -240,21 +237,8 @@ p.lead {
 
     @media (min-width: $screen-sm) and (max-width: $screen-md) {
       width: 50%;
-      &:nth-child(4) {
-        position: relative;
-        &:after {
-          display: block;
-          content: '';
-          position: absolute;
-          height: 50px;
-          width: 50px;
-          //background-color: red;
-          bottom: -25px;
-          right: -25px;
-          background-image: url(../images/cross.svg);
-          background-position: 50% 50%;
-          background-repeat: no-repeat;
-        }
+      &:first-child {
+        width: 100%;
       }
     }
   }
@@ -335,6 +319,21 @@ p.lead {
     }
     &.grid-w-3th {
       width: 100%;
+    }
+  }
+}
+
+.mockup-container {
+  overflow: hidden;
+  height: 800px;
+  margin-bottom: -5em;
+  @media (max-width: $screen-md) {
+    margin-bottom: 0;
+    height: auto;
+    margin-top: 3em;
+    img {
+      width: 100%;
+      height: auto;
     }
   }
 }

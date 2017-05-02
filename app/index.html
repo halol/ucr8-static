@@ -105,7 +105,7 @@
     </header>
 
     <section class="flex-wrap flex justify-center flex-row" id="what">
-      <div class="grid-item theme-blue-purple grid-w-50">
+      <div class="grid-item theme-blue-purple grid-w-50 what-we-do-item">
         <div class="inner">
           <h2>what we do</h2>
           <p class="lead measure">Put simply we create startups that might otherwise not exist. We just can't get enough of empowering our founders to solve real problems with clever solutions. We live and breath agile development and specialise in getting your startup to market in under 90 days (we work with enterprise too!).</p>
@@ -250,15 +250,25 @@
         <a href="https://www.whenyoumove.com/" class="btn btn-primary" target="_blank">Visit website</a>
       </div>
       <div class="grid-item grid-w-100 theme-dark-darker">
-        <img src="images/clients/logo_heero.svg" alt="Heero" class="project-logo">
-        <h3 class="project-title">Heero</h3>
-        <p class="lead testimonial measure">With an initial timeline of 3 months for the MVP the Heero app went into review with the App stores a little over 2 months into the project meaning I’ve had time to make tweaks based on Apple / Google feedback without running over budget. The quality of build is fantastic and having a team dedicated to my project makes it a lot easier to get things done.</p>
-        <div class="founder">
-          <img src="images/photos/philipwride-150x150.jpg" alt="Philip Wride" class="img-circle img-shadow">
-          <h4>Philip Wride, Founder</h4>
-        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="images/clients/logo_heero.svg" alt="Heero" class="project-logo">
+            <h3 class="project-title">Heero</h3>
+            <p class="lead testimonial measure">With an initial timeline of 3 months for the MVP the Heero app went into review with the App stores a little over 2 months into the project meaning I’ve had time to make tweaks based on Apple / Google feedback without running over budget. The quality of build is fantastic and having a team dedicated to my project makes it a lot easier to get things done.</p>
+            <div class="founder">
+              <img src="images/photos/philipwride-150x150.jpg" alt="Philip Wride" class="img-circle img-shadow">
+              <h4>Philip Wride, Founder</h4>
+            </div>
 
-        <a href="http://www.heeroapp.com/" class="btn btn-primary" target="_blank">Visit website</a>
+            <a href="http://www.heeroapp.com/" class="btn btn-primary" target="_blank">Visit website</a>
+          </div>
+          <div class="col-lg-6">
+            <div class="mockup-container text-center heero-slider">
+              <img src="images/mockups/heero-home.svg" alt="Heero" height="900">
+              <img src="images/mockups/heero-squads.svg" alt="Heero" height="900">
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- Client logos -->
@@ -384,6 +394,18 @@
         threshold: 20,
         loop: true
       });
+      new Siema({
+        selector: '.heero-slider',
+        duration: 200,
+        easing: 'ease-out',
+        perPage: 1,
+        startIndex: 0,
+        draggable: true,
+        threshold: 20,
+        loop: true
+      });
+
+
     </script>
   </body>
 </html>

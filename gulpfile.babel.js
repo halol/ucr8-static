@@ -7,6 +7,7 @@ import {stream as wiredep} from 'wiredep';
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
+const chromatic = require('chromatic-sass');
 
 gulp.task('styles', () => {
   return gulp.src('app/styles/*.scss')
@@ -15,7 +16,8 @@ gulp.task('styles', () => {
     .pipe($.sass.sync({
       outputStyle: 'compressed',
       //precision: 10,
-      includePaths: ['.']
+      includePaths: ['.'],
+      functions: chromatic
     }).on('error', $.sass.logError))
     .pipe($.autoprefixer({browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']}))
     .pipe($.sourcemaps.write())
