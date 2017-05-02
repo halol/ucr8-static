@@ -11,7 +11,7 @@ $icon-font-path: '../fonts/';
 
 
 * {
-  outline: 1px solid rgba(red, 0.3);
+  //outline: 1px solid rgba(red, 0.3);
 }
 
 
@@ -101,6 +101,16 @@ a {
 
     }
   }
+  @media (max-width: $screen-xs-max) {
+    font-size: 24px;
+    margin-bottom: 0;
+    li {
+
+      a {
+        padding: 24px;
+      }
+    }
+  }
 }
 
 h1 {
@@ -130,7 +140,7 @@ h2 {
 
 header.header {
   height: 98vh;
-  background-image: url(../images/covers/header_l.jpg);
+  //background-image: url(../images/covers/header_l.jpg);
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -138,10 +148,10 @@ header.header {
     height: 50vh;
   }
   @media (min-width: $screen-xs-max) and (max-width: $screen-md-max) {
-    background-image: url(../images/covers/header_md.jpg);
+    //background-image: url(../images/covers/header_md.jpg);
   }
   @media (max-width: $screen-xs-min) {
-    background-image: url(../images/covers/header_sm.jpg);
+    //background-image: url(../images/covers/header_sm.jpg);
   }
   span {
     color: $brand-primary;
@@ -322,18 +332,31 @@ p.lead {
     }
   }
 }
-
-.mockup-container {
+.overflow-hidden {
   overflow: hidden;
-  height: 800px;
-  margin-bottom: -5em;
-  @media (max-width: $screen-md) {
-    margin-bottom: 0;
+}
+.mockup-container {
+  //margin-bottom: -9em;
+  overflow: hidden;
+  max-height: 100%;
+  //margin-bottom: -5em;
+  img {
+    width: 65%;
     height: auto;
+  }
+  @media (min-width: $screen-xs-max) and (max-width: $screen-md-max) {
+    margin-bottom: 0;
+    height: 100%;
+    margin-top: 3em;
+    img {
+      width: 70%;
+      height: auto;
+    }
+  }
+  @media (max-width: $screen-xs-max - 1) {
     margin-top: 3em;
     img {
       width: 100%;
-      height: auto;
     }
   }
 }
@@ -432,9 +455,10 @@ p.lead {
 }
 
 .video-container {
-  max-width: 60%;
+  //max-width: 60%;
   @media (max-width: $screen-md-max) {
     max-width: 100%;
+    margin-top: 3em;
   }
   .video-testimonial {
    background-size:cover;
@@ -563,6 +587,13 @@ img {
   }
 }
 
+figure.icon {
+  height: 120px;
+  img {
+    // height: 100%;
+    // width: auto;
+  }
+}
 
 // MailChimp Overrides
 #mc_embed_signup div.mce_inline_error {
