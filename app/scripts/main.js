@@ -16,7 +16,7 @@ $(document).ready(function() {
     var logosHeight = $('.client-logos').innerHeight();
     if($(window).width() >= 500) {
       $('header.header').css({
-        minHeight: winHeight-logosHeight
+        minHeight: winHeight - logosHeight
       });
     }
 
