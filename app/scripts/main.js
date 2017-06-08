@@ -10,6 +10,27 @@ $(document).ready(function() {
   //   console.log(mapsUrl);
   //   return mapsUrl;
   // });
+
+  function resizeHeader() {
+    var winHeight = $(window).height();
+    var logosHeight = $('.client-logos').innerHeight();
+    if($(window).width() >= 500) {
+      $('header.header').css({
+        minHeight: winHeight-logosHeight
+      });
+    }
+
+    console.log(winHeight);
+    console.log(logosHeight);
+
+  }
+  resizeHeader();
+
+  $(window).resize(function() {
+    resizeHeader();
+  });
+
+
   $('body').scrollspy({ target: '#navbar-spy', offset: 50 });
   $('#navbar-spy a').on('click', function(event) {
 

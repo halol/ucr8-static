@@ -96,6 +96,7 @@
             <li><a href="#what">what we do</a></li>
             <li><a href="#how">how we do it</a></li>
             <li><a href="#say">what they say</a></li>
+            <li><a href="contact.html" style="color: #0E3FF2;">get in touch</a></li>
           </ul>
         </div>
       </div>
@@ -105,10 +106,20 @@
       <div class="inner-header">
         <h1><span class="em-navy">Energise</span> your startup.</h1>
         <p class="lead">Custom built apps, websites and software using our flexible, iterative approach.</p>
-        <a href="contact.html" class="btn btn-primary call-to-action btn-lg">Create something amazing<small>Get in touch</small></a>
+        <a href="contact.html" class="btn btn-danger call-to-action btn-lg">Create something amazing<small>Get in touch</small></a>
       </div>
     </header>
-
+    <!-- Client logos -->
+    <section class="flex-wrap flex justify-around items-center flex-row theme-light-dark client-logos">
+      <div class="grid-item grid-w-100">
+        <p style="color: #8D9697;">The startups we are building have raised more than <strong>£25 million</strong> in the past year</p>
+        <a href="http://myclientshare.com/" target="_blank"><img src="images/clients/logo_clientshare.svg" alt="Client Share" ></a>
+        <a href="http://www.jobstars.rocks/" target="_blank"><img src="images/clients/logo_jobstars.svg" alt="JobStars" ></a>
+        <a href="https://www.measurematch.com/" target="_blank"><img src="images/clients/logo_mm.svg" alt="Measure Match" ></a>
+        <a href="https://www.wagonex.com/" target="_blank"><img src="images/clients/logo_wagonex.svg" alt="Wagonex" ></a>
+        <a href="http://kidsknowbest.co.uk/" target="_blank"><img src="images/clients/logo_kkb.svg" alt="KidsKnowBest" ></a>
+      </div>
+    </section>
     <section class="flex-wrap flex justify-center flex-row" id="what">
       <div class="grid-item theme-blue-purple grid-w-50 what-we-do-item">
         <div class="inner">
@@ -245,10 +256,10 @@
           <div class="col-lg-6">
             <div class="video-container">
               <div class="embed-responsive embed-responsive-16by9">
-                <video controls class="embed-responsive-item video-testimonial video-james" preload="none" poster="images/posters/james-ward.png">
-                  <source src="https://s3-eu-west-1.amazonaws.com/ucreate/james-720p.mp4" type="video/mp4">
-                  <source src="https://s3-eu-west-1.amazonaws.com/ucreate/james-720p.ogv" type="video/ogg">
-                  <source src="https://s3-eu-west-1.amazonaws.com/ucreate/james-720p.webm" type="video/webm">
+                <video controls controlsList="nodownload" class="embed-responsive-item video-testimonial video-james" preload="none" poster="images/posters/james-ward.png">
+                  <source src="https://s3-eu-west-1.amazonaws.com/ucreate/james_testimonial_720p_25fps.mp4" type="video/mp4">
+                  <source src="https://s3-eu-west-1.amazonaws.com/ucreate/james_testimonial_720p_25fps.ogv" type="video/ogg">
+                  <source src="https://s3-eu-west-1.amazonaws.com/ucreate/james_testimonial_720p_25fps.webm" type="video/webm">
                 </video>
               </div>
             </div>
@@ -298,21 +309,7 @@
         </div>
       </div>
     </section>
-    <!-- Client logos -->
-    <section class="flex-wrap flex justify-around items-center flex-row theme-light-dark client-logos">
-      <div class="grid-item grid-w-100">
-        <p class="lead">The startups we are building have raised more than <strong>£25 million</strong> in the past year</p>
-        <img src="images/clients/logo_latetrip.svg" alt="Latetrip.com" >
-        <img src="images/clients/logo_jobstars.svg" alt="JobStars" >
-        <img src="images/clients/logo_mm.svg" alt="MyWay" >
-        <img src="images/clients/logo_wagonex.svg" alt="Wagonex" >
-        <img src="images/clients/logo_myvitae.svg" alt="MyVitae" >
-        <img src="images/clients/logo_kkb.svg" alt="KidsKnowBest" >
-        <img src="images/clients/logo_swift.svg" alt="Swift" >
-        <img src="images/clients/logo_mpp.svg" alt="MyPocketPro" >
-        <img src="images/clients/logo_eezy.svg" alt="Eezy" >
-      </div>
-    </section>
+
 
     <footer class="footer flex-wrap flex justify-center flex-row theme-less-dark" id="footer">
       <div class="grid-item collapse-on-mobile">
@@ -407,9 +404,9 @@
     <script src="/bower_components/siema/dist/siema.min.js"></script>
     <!-- endbuild -->
     <script>
-      new Siema({
+      const photoSlider = new Siema({
         selector: '.siema',
-        duration: 200,
+        duration: 500,
         easing: 'ease-out',
         perPage: 1,
         startIndex: 0,
@@ -417,6 +414,8 @@
         threshold: 20,
         loop: true
       });
+      setInterval(() => photoSlider.next(), 4000);
+
       new Siema({
         selector: '.heero-slider',
         duration: 200,
